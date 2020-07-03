@@ -1,0 +1,42 @@
+.foot {
+    background-color: black;
+    height: 135px;
+    padding: 0 20px;
+    width: 100%;
+    color: white;
+    
+    .footer-li{
+        align-items: center; 
+        display: flex;
+        margin: auto;
+        height: 100%; 
+        max-width: 1800px;
+    }
+
+.menu {
+        flex: 1;
+        text-align: left;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                display: inline-block;
+                margin-left: 20px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-family:  'Montserrat', sans-serif;
+                    font-size: 14px;
+                    &:hover {
+                        color: #2ebaee;
+                        border-bottom: 2px solid #2ebaee;
+                    }
+                }
+            }
+        }
+    }
+
+

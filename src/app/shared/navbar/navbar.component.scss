@@ -1,0 +1,53 @@
+
+.navi {
+    background-color: black;
+    height: 145px;
+    padding: 0 20px;
+    width: 100%;
+
+    .theme-container {
+        align-items: center; // nag aalign ng mga anak 
+        display: flex; // dapat flex sya para ma-align ang mga anak nya
+        margin: auto;
+        height: 100%; // height 100% means buong height ng parent nya 145px si navi
+        max-width: 1800px; // max-width para responsive
+    }
+
+    .logo {
+        font : {
+            weight: bold;
+        }
+
+        a {
+            color: white;
+            font-size: 37px;
+        }
+    }
+
+    .menu {
+        flex: 1;
+        text-align: right;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                display: inline-block;
+                margin-right: 20px;
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-family:  'Montserrat', sans-serif;
+                    &:hover {
+                        color: #2ebaee;
+                        border-bottom: 2px solid #2ebaee;
+                    }
+                }
+            }
+        }
+    }
+}
